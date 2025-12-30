@@ -19,7 +19,7 @@ export default async function handler(req, res) {
   await redis.set("palancasData", palancas);
 
   res.status(200).json({
-    message: "Estado actualizado",
+    message: "Done",
     palancas
   });
 }
